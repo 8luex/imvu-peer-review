@@ -1,0 +1,23 @@
+# 本地 AI / editor 配置
+.claude/
+.vscode/
+.idea/
+
+# 登录后保存的页面快照 / Saved page snapshots
+Peer Review.html
+Peer Review_files/
+
+# Secrets / 本地环境变量
+.env
+.env.*
+!.env.example
+
+# Logs / 临时文件
+*.log
+*.tmp
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
