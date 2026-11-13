@@ -17,9 +17,9 @@
 
 | | | |
 | --- | --- | --- |
-| Necklaces | Bracelets | Hair |
-| Heads | Tails | Eyebrows |
-| Shoes | Nails | Glasses |
+| Hair | Heads | Tails |
+| Eyebrows | Shoes | Nails |
+| Glasses | Eyes | |
 
 匹配 **不区分大小写**，使用 word boundary，不是任意子字符串匹配。例如，`Hair` 可以匹配，`Hairpins` 不会仅因为包含 Hair 就匹配。
 
@@ -75,7 +75,7 @@ Clothing > Clothing for Male > Hoodies  → Skip
 
 ```js
 const allowedCategories =
-  /\b(?:Necklaces|Bracelets|Hair|Heads|Tails|Eyebrows|Shoes|Nails|Glasses)\b/i;
+  /\b(?:Hair|Heads|Tails|Eyebrows|Shoes|Nails|Glasses|Eyes)\b/i;
 ```
 
 保存后刷新页面即可生效。关键词位于正则表达式中；加入包含特殊符号的类别时，需要正确转义。

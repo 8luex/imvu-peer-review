@@ -16,7 +16,7 @@ function rand(min, max) {
 }
 
 const allowedCategories =
-  /\b(?:Necklaces|Bracelets|Hair|Heads|Tails|Eyebrows|Shoes|Nails|Glasses)\b/i;
+  /\b(?:Hair|Heads|Tails|Eyebrows|Shoes|Nails|Glasses|Eyes)\b/i;
 
 function execute() {
   const catalogLocation = document
